@@ -51,7 +51,7 @@ Debris gone:
 
 ![dirt](/assets/images/patio/dirt1.jpg)
 
-Another weekend at Home Depot. Took nearly all day just to load them in and then out again once I got home. Plus the suspentions on the SUV was dangerously compressed:
+Another weekend at Home Depot. Took nearly all day just to load them up and then out again once I got home. Plus the suspention on the SUV was dangerously compressed:
 
 ![pavers](/assets/images/patio/pavers0.jpg)
 
