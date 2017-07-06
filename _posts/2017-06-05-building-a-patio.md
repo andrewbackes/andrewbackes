@@ -15,7 +15,7 @@ My wife and I recently moved into a new apartment. It's a great place but the us
 
 I got it in my head that I could do something about that. It probably had something to do with all the HGTV that my wife and I watch. 
 
-I figured I could knock the whole project out in a weekend, no problem. To begin I headed down to Home Depot and rented a stump grinder for 4 hours. Got back home and get to work:
+I figured I could knock the whole project out in a weekend, no problem. To begin I headed down to Home Depot and rented a stump grinder for 4 hours. Got back home and got to work:
 
 1 hour later...
 
@@ -31,7 +31,7 @@ I had to take a break. Somewhere around the 4 hour mark:
 
 ![stump](/assets/images/patio/stump4.jpg)
 
-Yup, I had to call and extend my rental. After around 5 and a half hours, I finally had to stump removed. But there were roots going out for days:
+Yup, I had to call and extend my rental. After around 5 and a half hours, I finally got to stump removed. But there were roots everywhere:
 
 ![stump](/assets/images/patio/stump5.jpg)
 
@@ -51,7 +51,7 @@ Debris gone:
 
 ![dirt](/assets/images/patio/dirt1.jpg)
 
-Another weekend at Home Depot. Took nearly all day just to load them up and then out again once I got home. Plus the suspention on the SUV was dangerously compressed:
+Another weekend at Home Depot. Took nearly all day just to load them up and then out again once I got home. Plus the suspension on the SUV was dangerously compressed:
 
 ![pavers](/assets/images/patio/pavers0.jpg)
 
