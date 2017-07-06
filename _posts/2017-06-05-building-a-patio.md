@@ -14,3 +14,5 @@ description: What it takes to make a patio
 ## Summary:
 
 More to come...
+
+![stump](/assets/images/patio/stump1.jpg)
