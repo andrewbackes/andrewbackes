@@ -83,7 +83,7 @@ Added some lights:
 In the end the project ended up taking enough weekends to fill a month plus a bunch of evenings after work. Also, it ended up being pricier than I expected. Heres the breakdown:
 
 |                                        | Cost |
-| -------------------------------------: | :---:|
+| :------------------------------------- |  ---:|
 | Stump Grinder                          | $150 |
 | Truck rental to haul the stump grinder |  $50 |
 | Dump                                   |  $50 |
@@ -93,7 +93,7 @@ In the end the project ended up taking enough weekends to fill a month plus a bu
 | Angel grinder purchase                 |  $30 |
 | Diamond disc                           |  $15 |
 | Hand tamper                            |  $25 |
-| -------------------------------------: | :---:|
+| :------------------------------------- |  ---:|
 | Total                                  | $540 |
 
 All in all, I think it was worth it. It was a great learning experience and a lot of fun.
