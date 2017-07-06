@@ -3,7 +3,7 @@ title: "Dirty-Bit Chess Engine"
 layout: post
 date: 2013-12-09
 tag: chess
-image: /assets/images/tourney_logo.png
+image: /assets/images/dirtybit_logo.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination

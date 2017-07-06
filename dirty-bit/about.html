@@ -1,0 +1,332 @@
+<?xmlversion = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="author" content="Andrew Backes" />
+		<meta name="copyright" content="Andrew Backes" />
+		<meta name="keywords" content="DirtyBit,Dirty-Bit,chess,computer chess engine,chess engine,computer chess" />
+		<meta name="description" content="Dirty-Bit Chess Engine" />
+		<script type="text/javascript" src="iehover.js"></script>		
+		<title>Dirty-Bit Chess Engine</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	 <div id="header_container">
+		<div id="header">
+			<img class="logo" src="images/logo4.png" alt="DBIT" />
+			<img class="title" src="images/title2.png" alt="Dirty-Bit" />
+		</div>
+	</div>
+	<div id="nav_container">
+	<div id="nav_divider"> </div>
+	<div id="nav">
+		<a href="about.html" class="highlight">About</a>
+		<a href="index.html">News</a>
+		<a href="download.html">Download</a>
+	</div>
+	</div>
+	<div id="content_divider">
+	</div>
+	<div id="content_container">	
+		<div id="content">
+		   <!--- --- --- NEWS ITEM --- --- --->
+			<!--
+			<div class="news_item">
+				<div class="news_header">
+					<span class="news_date"></span>
+					<span class="news_title">About Me</span>
+				</div>
+				<div class="news_content">
+				<p>
+				...
+				</p>
+				</div>
+			</div>
+			-->
+			<div class="news_item">
+				<div class="news_header">
+					<span class="news_date"></span>
+					<span class="news_title">About the Project</span>
+				</div>
+				<div class="news_content">
+				<p>
+				My first chess program was written using Visual Basic 6.0 around 2001 or 2002 while I was still in High School. At that time, I was more interested in creating a GUI rather than a strong chess playing engine. The program was capable of searching at about depth 5 and on yahoo chess this was good enough to get it around a 2000 rating (if memory serves correctly).
+				</p>
+				<p>
+				The original scope of the project was quite narrow. I started out strictly insterested in making a chess engine to demonstrate my ability in C++. Now the project has stemmed into a small amount of web programming. In the future, I would like to create a cross platform GUI using Java. Even further, I have considered bringing the project to mobile devices.
+				</p>
+				<div class="sub_header">Project Goals</div>
+					<p>
+					
+					<h3>Engine:</h3>
+					<table class="goals">
+						<tr>
+							<td>&#9733 </td><td>Goal:</td><td> Create a program that plays legal chess using bitmap based internal data structure to represent the gamestate.</td>
+						</tr>
+						<tr>
+							<td>&#9733 </td><td>Goal:</td><td> Create a program that can beat other chess playing programs, namely Exacto 0.d.</td>
+						</tr>
+						<tr>
+							<td>&#9734 </td><td>Goal:</td><td> Obtain a CCRL rating of at least 2000 ELO.</td>
+						</tr>
+						<tr>
+							<td>&#9734 </td><td>Goal:</td><td> Play at the Master level. I am estimating this to be approximately 2300 ELO on the CCRL scale.</td>
+						</tr>
+						<tr>
+							<td>&#9734 </td><td>Goal:</td><td> Rank within the top 100 programs on CCRL.</td>
+						</tr>
+						</table>
+						
+						<h3>Site:</h3>
+						<table class="goals">
+						<tr>
+							<td>&#9733 </td><td>Goal:</td><td> Allow visiters to download Dirty-Bit and learn a little bit about the project.</td>
+						</tr>
+						<tr>
+							<td>&#9734 </td><td>Goal:</td><td> Allow visiters to provide feedback through the site on their experiences with Dirty-Bit.</td>
+						</tr>
+						<tr>
+							<td>&#9734 </td><td>Goal:</td><td> Use the site to keep track of game play statistics by allowing Dirty-Bit to connect to an SQL database and upload results from anywhere.</td>
+						</tr>
+						<tr>
+							<td>&#9734 </td><td>Goal:</td><td> Allow Dirty-Bit to play with users of the site through a web based front end.</td>
+						</tr>
+					</table>
+
+					<h3>GUI:</h3>
+					<table class="goals">
+						<tr>
+							<td>&#9734 </td><td>Goal:</td><td> Create a cross platfrom GUI using Java that is taylored towards engine vs engine play.</td>
+						</tr>
+					</table>
+				</p>
+				<!--
+				<div class="sub_header">Project Milestones</div>
+					<p>	
+						<br/>
+						Milestone: Learn, understand, and impliment all of the most successful search related techniques:
+						<br/>
+						Principle Variation Search (PVS)
+						Quiescent Search
+						Null-Move Pruning
+						Killer Moves
+						Futility Pruning
+						Late Move Reductions
+						Piece Square Tables
+						Search Extensions
+						MVV/LVA
+						Static Exchange Evaluation
+						Hash Tables (Transposition Table and Pawn Table)
+						Iterative Deepening
+						Internal Iterative Deepening
+						Aspiration Windows
+						<br/>
+						Goal: Create an automated tuning algorithm for the evaluation values within Dirty-Bit. Consider a Genetic Algorithm. 
+						<br/>
+						Goal: Release Dirty-Bit to be played and ranked on the CCRL. Initial goal is an ELO of at least 2000.
+						<br/>
+					</p>
+				</div>
+				-->
+				</div>
+			</div>
+		   <!--- --- --- NEWS ITEM --- --- --->
+			<div class="news_item">
+				<div class="news_header">
+					<span class="news_date"></span>
+					<span class="news_title">About Dirty-Bit</span>
+				</div>
+				<div class="news_content">
+					<p>
+					...
+					</p>
+					<div class="sub_header">Current Features</div>
+					<p>
+					Dirty-Bit has most well known search heuristics and techniques in its code. However, some of the features still require tuning and have been disabled.
+					</p>
+					<p>
+					<b>Enabled Features:</b>
+					<ul>
+						<li>Principle Variation Search (PVS)</li>
+						<li>Quiescent Search (with delta pruning)</li>
+						<li>Null-Move Pruning</li>
+						<li>Late Move Reductions</li>
+						<li>Piece Square Tables</li>
+						<li>Search Extensions</li>
+						<li>MVV/LVA</li>
+						<li>Static Exchange Evaluation</li>
+						<li>Hash Tables (Transposition Table and Pawn Table)</li>
+						<li>Iterative Deepening</li>
+						<li>Internal Iterative Deepening</li>
+						<li>Aspiration Windows</li>
+						<li>Magic Bitboards (9 bit / 12 bit)</li>
+						<li>Lazy move generation</li>
+					</ul>
+					<b>Disabled Features:</b>
+					<ul>
+						<li>Killer Moves - Currently corrupts the move list</li>
+						<li>Futility Pruning - Somehow increases nodes search!?</li>
+					</ul>
+					</p>
+					<div class="sub_header">Planned Features</div>
+					<p>
+					Other than tuning the above disabled features, the following need to be implimented before release:
+					
+						<ul>
+							<li>Multithreaded Search (DTS)</li>
+							<li>More elaborate evaluation</li>
+						</ul>
+						These features will most likely be added after release since they will not be used in CCRL games:
+						<ul>
+							<li>Pondering</li>
+							<li>Opening Book</li>
+							<li>Positional Learning</li>
+						</ul>
+					</p>
+					<!--
+					<div class="sub_header">Programming Specific Details</div>
+					<p>
+					...
+					</p>
+					-->
+					<div class="sub_header" id="changelog">Change Log</div>
+					<div class="note">
+						<table>
+							<tr>
+								<td>0.37</td>
+								<td>
+								9-12 Magics<br/>
+								More eval tweaks<br/>
+								added movestogo (UCI) command to go()
+								</td>
+							</tr>
+							
+							<tr>
+								<td>0.36</td>
+								<td>
+								Mobility eval
+								</td>
+							</tr>
+						
+							<tr>
+								<td>0.35</td>
+								<td>
+								Pawn Hash Tables and more pawn eval.
+								</td>
+							</tr>
+						
+						
+						<tr><td>
+						0.31
+						</td><td>
+						R=3
+						</td></tr>
+						<tr><td>
+						0.3
+						</td><td>
+						Rewritten LMR (set to 4/3)<br>
+						Killers disabled (since they are buggy at the moment)<br>
+						Rewritten SEE (SEE3, set for ALL captures, not just non-winners)<br>
+						Still using Check extensions<br/>
+						</td></tr>
+						
+						
+						<tr><td>
+						0.25
+						</td><td>
+						SEE and move ordering changes<br/>
+						IID implimented, but disabled (needs tuning!)<br>
+						Time control fixes<br/>
+						Check extensions<br/>
+						50 move rule bug fixed<br/>
+						LMR disabled<br/>
+						34 cp for apsiration window<br/>
+						</td></tr>
+						
+						
+						<tr><td>
+						0.2
+						</td><td>
+						Rewritten fail hard PVS using nextmove()<br>
+						LMR above ply 4 and below move 5<br/>
+						Aspiration window of 50, fails expand by 100 then go infinite<br/>
+						Simple Eval<br/>
+						No check extensions<br/>
+						No to move bonus<br/>
+						</td></tr>
+						
+						
+						<tr><td>
+						0.12
+						</td><td>
+						No Check extensions, no LMR<br/>
+						(Changed move list to use NextMove() and lazy killers)<br>
+						</td></tr>
+						
+						
+						<tr><td>
+						0.11
+						</td><td>
+						Check extensions
+						</td></tr>
+						
+						
+						<tr><td>
+						0.1
+						</td><td>
+						Lazy movegen PVS + killer moves<br/>
+						Aspiration windows<br/>
+						Simple eval: material and PSTs<br/>
+						No check extensions, no LMR<br/>
+						</td></tr>
+						
+						
+						<tr><td>
+						0.01
+						</td><td>
+						Plays legal chess<br/>
+						</td></tr>
+								
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div id="top_side_bar"> 
+			<div class="title">Latest Version</div>
+			<p>0.37 (Unreleased)</p>
+			<br/>
+			<p><a href="about.html#changelog">[Version History]</a></p>
+			<br/>
+			<h3>Goal Tracking:</h3>
+			<div class="title">Engine</div><br>
+			<div class="goal"><font class="goal_label">GOAL</font><font class="goal_score"> &#9733 &#9733 &#9734 &#9734 &#9734 </font></div>
+			<br><br>
+			<div class="title">Site</div><br>
+			<div class="goal"><font class="goal_score"> &#9733 &#9734 &#9734 &#9734 </font><font class="goal_label">GOAL</font></div>
+			<br><br>
+			<div class="title">GUI</div><br>
+			<div class="goal"><span class="goal_score"> &#9734 </span><span class="goal_label">GOAL</span></div>
+		</div>
+		<div id="bottom_side_bar"> 
+			
+		</div>
+	</div>
+	<div id="content_bottom_divider">
+	</div>
+	<div id="footer_container">
+		<div id="footer_divider"> </div>
+		<div id="footer"> 
+		This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.
+		<br />
+		<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a>
+		
+		</div>
+	</div>
+	 
+	
+	</body>
+</html>

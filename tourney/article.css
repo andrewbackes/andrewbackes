@@ -1,0 +1,180 @@
+
+article div.content {
+	font-size: 95%;
+}
+
+/*
+	Alternating Articles:
+*/
+
+article.alternating {
+	display: inline-block;
+	border-bottom: 2px solid #331100;
+	width:100%;
+}
+
+article.alternating header {
+	width: 35%;
+	min-width: 200px;
+	display: inline-block;
+	float:left;
+	text-align: right;
+	margin: 5% 0% 5% 5%;
+}
+
+article.alternating div.content {
+	color: #333333;
+	width: 50%;
+	display: inline-block;
+	min-width: 300px;
+	float:right;
+	text-align: left;
+	margin: 5% 5% 5% 5%;
+	
+}
+
+article.alternating:nth-of-type(even) header {
+	float: right;
+	text-align: left;
+	margin: 5% 5% 5% 0%;
+}
+article.alternating:nth-of-type(even) div.content {
+	float: left;
+}
+
+article.alternating:last-of-type {
+	border: none;
+}
+
+article.alternating h4 {
+	margin: 0;
+
+}
+
+article.alternating ul {
+	margin: 10px;
+
+}
+
+/*
+	Articles with titles layed into the article:
+*/
+
+article.inlayed_title {
+	min-width: 300px;
+	width: 96%;
+	margin: 0% 2% 0% 2%;
+	display: inline-block;
+	border-bottom: 2px solid #331100;
+}
+article.inlayed_title header {
+	min-height: 3.5em;
+	width: 40%;
+	min-width: 200px;
+	float:left;
+	text-align: right;
+	margin: 5% 5% 5% 0%;
+	display: inline-block;
+}
+
+article.inlayed_title div.content {
+	text-align: left;
+	margin: 8% 0% 5% 0%;
+}
+
+
+article.inlayed_title:last-of-type {
+	border: none;
+}
+
+article.inlayed_title div.footer {
+	width: 98%;
+	text-align: right;
+	margin-right: 2%;
+	display: inline-block;
+	font-size: 90%
+}
+
+article.inlayed_title div.footer a {
+	text-decoration: none;
+}
+
+article.inlayed_title div.stupidhack {
+	display: inline-block;
+	width: 100%;
+}
+
+/*
+	Side by Side Articles:
+*/
+
+article.ss {
+	min-width: 300px;
+	width: 45%;
+	margin: 2%;
+	float: left;
+	display: inline-block;
+}
+article.ss header {
+	text-align: center;
+	min-height: 3.5em;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+article.ss:nth-of-type(even) div.content, article.ss:nth-of-type(even) header {
+	text-align: left;
+}
+
+article.ss:nth-of-type(odd) div.content, article.ss:nth-of-type(odd) header {
+	text-align: right;
+}
+
+/*
+	Side by Side by Side Articles:
+*/
+
+article.sss {
+	min-width: 200px;
+	width: 29%;
+	margin: 2%;
+	float: left;
+	display: inline-block;
+}
+article.sss header {
+	text-align: left;
+	min-height: 3.5em;
+}
+
+article.sss div.content {
+	text-align: left;
+}
+
+div.nonarticle {
+	width: 100%;
+	display:inline-block;
+	border-top: 1px solid #331100;
+	text-align: left;
+}
+
+div.nonarticle div.title{
+	width: 29%;
+	margin: 5% 2% 2% 2%;
+	display:inline-block;
+	float: left;
+	min-width: 200px;
+	text-align: right;
+}
+div.nonarticle div.summary{
+	width: 62%;
+	margin: 5% 2% 2% 2%;
+	display:inline-block;
+	float: left;
+	min-width: 200px;
+}
+div.nonarticle p {
+	text-align: center;
+	font-style: italic;
+	display:inline-block;
+	width: 100%;
+}

@@ -1,0 +1,462 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="header.css">
+		<link rel="stylesheet" type="text/css" href="article.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="footer.css">
+		<title>
+		Tourney
+		</title>
+	</head>
+	<body>
+		<header id="intro">
+			<div id="tourney">
+				<a href="index.html"><img src="logo4b.png" class="logo" alt="Tourney"></img></a>
+				<h1>Tourney</h1>
+				<h4>Broadcast and distribute chess engine tournaments.</h4>
+			</div>
+			<nav>
+			<a href="features.html">Features</a> | <a href="download.html">Download</a> | <a href="support.html">Support</a>
+			</nav>
+		</header>
+		
+		<main>
+			<div class="title">
+				<h1>How do you use Tourney?</h1>
+			</div>
+			<article class="alternating" id="toc">
+				<header>
+					<h2>Get Some Help:</h2>
+					<h3>Last updated 01/06/2015</h3>
+				</header>
+				<div class="content">
+					<h4>Getting started:</h4>
+					<ul>
+						<li><a href="#a1">I downloaded Tourney, now what?</a></li>
+						<li><a href="#a2">How do I make a new tournament file?</a></li>
+						<li><a href="#a5">What happens when a tournament finishes?</a></li>
+						<li><a href="#a3">What commands does Tourney support?</a></li>
+						<li><a href="#a4">Does Tourney support command line arguments?</a></li>
+					</ul>
+					<h4>Web Broadcasting:</h4>
+					<ul>
+						<li><a href="#b1">How do you watch a tournament over the web?</a></li>
+					</ul>
+					<h4>Hosting (Client/Server):</h4>
+					<ul>
+						<li><a href="#c1">How do I host a tournament over the web?</a></li>
+						<li><a href="#c2">How do I participate in somebody else's tournament over the web?</a></li>
+					</ul>
+					<h4>Opening Book</h4>
+					<ul>
+						<li>How does the opening book work?</li>
+						<li><a href="#d2">How do I make my own opening book?</a></li>
+					</ul>
+					<h4>Misc</h4>
+					<ul>
+						<li><a href="#e1">How can I use Tourney to help tune my engine?</a></li>
+					</ul>
+				</div>
+			</article>
+			<article id="a1" class="inlayed_title">
+				<header>
+					<h2>I downloaded Tourney, now what?</h2>
+					<h3>Updated 01/03/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						There are two ways to set up a tournament in Tourney. <br/>
+						<br />
+						The easies way is to create a .tourney file. This is a simple text file that describes what engines will be participating and what the rules of the tournament will be. For instructions on how to create a .tourney file, see the <a href="#a2">section below</a>.
+						<br />
+						<br />
+						Next you will need to open Tourney. It should look similar to:
+					</p>
+					<div class="terminal">
+						<span class="center">Tourney</span><br />
+						Loading tourney: 'default.tourney'... Success.<br />
+						Opening book: default.book'...<br />
+						Looking for previously build book 'default.book'...<br />
+						Loading opening book: 'default.book'...<br />
+						Loading previous tourney data... Nothing to load.<br />
+						<br />
+						The following tourneys are currently loaded:<br />
+						 --> 1. Default Tourney<br />
+						 <br />
+						To select a different tourney from the list, type its name or number.<br />
+						To load a tourney not listed, type 'load [filename]'<br />
+						To see this list again, type 'ls'<br />
+						For a list of additional commands, type 'help'<br />
+						<br />
+						Broadcasting http on port 8080<br />
+						Default Tourney> _ <br />
+					</div>
+					<p>
+						To load your .tourney file just type: <span class="terminal">load [filename]</span>. Where [filename] is the path and name of the .tourney file you created. After it has loaded, you can choose to run the tournament or host it for other computers to play in. To start playing, just type: <span class="terminal">play</span>. If at any point you want to stop the tournament, type: <span class="terminal">stop</span> and the tournament will stop after the next game. To instead host the tournament, type: <span class="terminal">host</span>.
+					</p>
+					<p>
+						If you would like to watch the tournament, open your web browser and navigate to <span class="url">http://localhost:8080/</span>
+					</p>
+					<p>
+						Alternatively, if you do not want to create a .tourney file, you can set up a tournament with commands:
+					</p>
+					<ul>
+						<li>
+							<span class="heavier">new</span> - Creates a new tournament. Type this in before any of the other commands, otherwise you will be modifying the default tournament settings.
+						</li>
+						<li>
+							<span class="heavier">addengine</span> - Type this in to be prompted about adding an engine to the tournament. You will need to set a name of the engine, it can be what ever you want. You will also need to know the file path of the engine and the protocol that it uses.
+						<li>
+						<li>
+							<span class="heavier">timecontrol &lt;moves&gt; / &lt;per milliseconds&gt; : &lt;bonus milliseconds&gt; </span> - Sets the number of moves, milliseconds and increment per time control. For example 40 moves in 2 minutes with a 1 second increment after each move would be: <span class="terminal">timecontrol 40/120000:1000</span>.
+						</li>
+					</ul>
+					For more commands you can type <span class="terminal">commands</span> or <span class="terminal">help</span>.
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="a2" class="inlayed_title">
+				<header>
+					<h2>How do I make a new tournament file?</h2>
+					<h3>Updated 01/04/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						Tourney comes with two sample .tourney files to use as examples. One for Windows and one for Linux/MacOSX/BSD. The windows version is called sample_win.tourney. Opening it you will see:
+					</p>
+					<div class="file">
+						{<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Event": "Sample Windows Tourney",<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Site": "localhost",<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Date": "??",<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Engines": [<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		{ 	<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Name": "Senpai", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Path": "C:\\engines\\senpai.exe", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Protocol": "UCI"<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		},<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		{ <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Name": "Crafty", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Path": "C:\\engines\\crafty.exe", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Protocol": "WINBOARD"<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		}<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	],<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"TestSeats": 1,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Carousel": true,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Moves": 40,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Time": 1000,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"BonusTime": 0,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Repeating": true,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Rounds": 10,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"BookLocation": "default.book",<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"BookMoves": 8,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"RandomBook": false,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"BookMirroring": true<br />
+						}
+					</div>
+					<p>
+						It is best to open one of the samples and then save it as something else. After that, you can modify the fields you desire.
+					</p>
+					<h4>Adding Engines</h4>
+					<p>
+						To add more engines you can copy and what is between the [ ] after "Engines". When dealing with Windows file paths, one nuance to be aware of is to use \\ instead of \ in filenames. On the *nix systems, you don't have to worry about this.
+					</p>
+					<p>
+						For example you may want to have something like:
+					</p>
+					<div class="file">
+					&nbsp;&nbsp;&nbsp;&nbsp;	"Engines": [<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		{ 	<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Name": "Senpai", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Path": "C:\\engines\\senpai.exe", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Protocol": "UCI"<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		},<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		{ <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Name": "Crafty", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Path": "C:\\engines\\crafty.exe", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Protocol": "WINBOARD"<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		},<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		{ <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Name": "Stockfish", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Path": "C:\\engines\\stockfish.exe", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Protocol": "UCI"<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		},<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		{ <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Name": "Fruit 2.1", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Path": "C:\\engines\\fruit21.exe", <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			"Protocol": "UCI"<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		}<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	],<br />
+					</div>
+					<p>
+						Make sure to put a comma after each '}' if there is another engine after it. But do not include a comma after the very last '}'. As seen above.
+					</p>
+					<h4>Tourament Modes</h4>
+					<p>The format of the tourmament is determined by:
+					<ul>
+						<li>
+							<span class="heavier">TestSeats</span> - Determines how many engines will be played in gauntlet mode. When "TestSeats":1 this is just normal Gauntlet mode and the first engine listed will be played against every other engine (how many times is determined by the "Rounds" field). 
+						</li>
+						<li>
+							<span class="heavier">Carousel</span> - Controls the order in which the games are played. When "Carousel":true then each matchup will be played one at a time rather than all of the rounds for that matchup at one time. For example, suppose we have Engines A, B and C playing 2 rounds. Then the A vs B matchup will occur, then A vs C, then A vs B again and finally A vs C again. Opposed to A vs B, A vs B, A vs C, A vs C. 
+						</li>
+						<li>
+							<span class="heavier">Rounds</span> - How many games are played per matchup. For example if a tournament is Engine A vs Engine B for 1 round, we would just have 1 game: A vs B. If rounds were to instead be set to 2 we would have: A vs B then B vs A. For "Rounds":3 we would have: A vs B, B vs A, A vs B. And so on.
+						</li>
+					</ul>
+					<h4>Time Control</h4>
+					<p>
+						Time control is determined by:
+					</p>
+					<ul>
+						<li>
+							<span class="heavier">Time</span> - Time measured in milliseconds per time control. 
+						</li>
+						<li>
+							<span class="heavier">BonusTime</span> - Milliseconds added to a players time after each move.
+						</li>
+						<li>
+							<span class="heavier">Moves</span> - Complete moves per time control (not to be confused with plies).
+						</li>
+						<li>
+							<span class="heavier">Repeating</span> - When "Repeating":true then after the time control is fulfilled a new time control will begin. If "Repeating":false then when either the number of moves or time have been satisfied, the game will be over.
+						</li>
+					</ul>
+					<p>For example, 40/2 time control would be represented by:</p>
+					<div class="file">
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Moves": 40,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Time": 120000,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"BonusTime": 0,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Repeating": true,<br />
+					</div>
+					<p>Or, 40/10:1 time control would be represented by:</p>
+					<div class="file">
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Moves": 40,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Time": 600000,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"BonusTime": 1000,<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;	"Repeating": true,<br />
+					</div>
+					<h4>Opening Book</h4>
+					<ul>
+						<li>
+							<span class="heavier">BookLocation</span> - The path of the file being used as the opening book. This can be a pgn file or tourney's .book file. For Windows users make sure to \\ opposed to just \ for file paths. For example: "BookLocation":"C:\\tourney\\openings.book". This is not a concern for *nix users.
+
+						</li>
+						<li>
+							<span class="heavier">BookMoves</span> - How many complete moves will be played before leaving the book. Set "BookMoves":0 to not use the opening book.
+						</li>
+						<li>
+							<span class="heavier">RandomBook</span> - The moves from the book will be chosen at random rather than in sequence.
+						</li>
+						<li>
+							<span class="heavier">BookMirroring</span> - When "BookMirroring":true each book position used will be played for both sides of a matchup. For example, if we have A vs B with opening X, then when we have B vs A opening X will also be used. This can help ensure fair opening book play. 
+						</li>
+					</ul>
+					<p>
+						After you have created your .tourney file it can be loaded by typing <span class="terminal">load [filename]</span>. To start played locally type <span class="terminal">play</span>.  Or you can host a tournament by instead typing <span class="terminal">host</span>.
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="a5" class="inlayed_title">
+				<header>
+					<h2>What happens when a tournament finishes?</h2>
+					<h3>Updated 01/06/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						When a tournament is finished running, Tourney will output the results to the screen and save them as <span class="file">&lt;filename&gt;.txt</span>. A pgn version will also be saved as <span class="file">&lt;filename&gt;.pgn</span> (where &lt;filename&gt; is the name of the .tourney file).
+					</p>
+					<p>
+						The progress of the tournament is saved as <span class="file">&lt;filename&gt;.data</span>. Every time you open the .tourney file for this tournament, it will keep track of where you left off. If you would like to start the tournament from scratch you can use the <span class="terminal">delete</span> command after loading the .tourney file. Then either the <span class="terminal">play</span> or <span class="terminal">host</span> commands.
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="a3" class="inlayed_title">
+				<header>
+					<h2>What commands does Tourney support?</h2>
+					<h3>Updated 01/04/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						For a complete list of commands type: <span class="terminal">commands</span> while in Tourney. For help using a command type: <span class="terminal">help</span> while in Tourney.
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="a4" class="inlayed_title">
+				<header>
+					<h2>Does Tourney support command line arguments?</h2>
+					<h3>Updated 01/04/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						You can start Tourney with three different command line arguments right now.
+					</p>
+					<div class="stupidhack"></div>
+					<p>
+						The arguments include:
+					</p>
+					<ul>
+						<li><span class="heavier">-play &lt;filename&gt;</span> will open a .tourney file and start playing it on the local machine. For example you may type:<br />
+							<br />
+						<div class="terminal">$ tourney -play "C:\testing.tourney"</div>
+						<br />
+						</li>
+						<li><span class="heavier">-host &lt;filename&gt;</span> will open a .tourney file and act as a host for other computers to connect and play games. For example you may type:<br />
+							<br />
+						<div class="terminal">$ tourney -host "C:\testing.tourney"</div>
+						<br />
+						</li>
+						<li><span class="heavier">-connect &lt;IP&gt;</span> connect to the specified IP that is hosting a tournament. For example, to connect to your own computer after launching another instance of Tourney with the -host parameter, you may type:<br />
+							<br />
+						<div class="terminal">$ tourney -connect 127.0.0.1</div>
+						<br />
+						</li>
+					</ul>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="b1" class="inlayed_title">
+				<header>
+					<h2>How do you watch a tournament over the web?</h2>
+					<h3>Updated 01/06/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						When Tourney is open, it starts automatically starts web server service. By default it broadcasts on port 8080. This can be changed in the settings file: <span class="url">tourney.settings</span>.
+					</p>
+					<p>
+						From your machine, you can navigate to <span class="url">http://localhost:8080</span> to view the tournament. 
+					</p>
+					<p>
+						For others to view the tournament, they will need to know your WAN IP address. If you are unsure what your IP is, you can simply google search, "what is my ip." Once you have determined your WAN IP, anybody can navigate their web browser to <span class="url">http://&lt;WAN IP HERE&gt;:8080</span> to watch the tournament. Also, if you are behind a router  then you will need to have port forwarding enabled. If you are not sure how to do this, you can find a guide at <a href="http://www.portforward.com">www.portforward.com</a>.
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="c1" class="inlayed_title">
+				<header>
+					<h2>How do I host a tournament over the web?</h2>
+					<h3>Updated 01/06/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						Launch Tourney and open a .tourney file (see <a href="#a2">this guide</a> if you are not sure how to use .tourney files). Now type <span class="terminal">host</span>. By default you will be serving the tournament on port 9000. This can be modified in the <span class="url">tourney.settings</span> file. If you would like to play in the tournament locally, open another copy of Tourney. Then type: <span class="terminal">connect</span>.
+					</p>
+					<p>
+						 Any computer on your LAN can also play. Tourney will need to be installed on any computer that wishes to participate. However, the game engines do not. You will need to know your LAN IP. From any client computer use the  <span class="terminal">connect &lt;LAN IP&gt;</span> command from within Tourney.
+					</p>
+					<p>
+						To allow participants over the web, you will need to know your WAN IP and have the appropriate ports forwarded through your router. Any client can then just use the <span class="terminal">connect &lt;WAN IP&gt;</span> command from within Tourney.
+					</p>
+					<p>
+						If you are unsure what your IP is, you can simply google search, "what is my ip." For help setting up port forwarding visit <a href="http://www.portforward.com">www.portforward.com</a>.
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="c2" class="inlayed_title">
+				<header>
+					<h2>How do I participate in somebody else's tournament over the web?</h2>
+					<h3>Updated 01/06/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						 The host will need to provide you with their IP address. Then from within Tourney use the <span class="terminal">connect &lt;IP&gt;</span> command. To follow the progress of the tournament you can navigate your web browser to <span class="url">http://&lt;IP&gt;:8080</span> (where &lt;IP&gt; is the IP address of the host).
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="d2" class="inlayed_title">
+				<header>
+					<h2>How do I make my own opening book?</h2>
+					<h3>Updated 01/06/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						 Tourney can generate an opening book from a pgn. If you specify a pgn file in the <span class="file">"BookLocation":</span> field of the .tourney file, a book will automatically be generated.
+					</p>
+					<p>
+						After generating a book, it will be saved as <span class="file">&lt;filename&gt;.book</span> in the default books folder. You can change the default books folder in <span class="file">tourney.settings</span>.
+					</p>
+					<div class="stupidhack"></div>
+					<p>
+						To generate a book from a pgn manually, you can use the 
+					</p>
+					<div class="terminal">buildbook &lt;PGN filename&gt; &lt;move#&gt; &lt;filters...&gt;</div> 
+					<p>
+					command. Where &lt;move#&gt; is how many moves into each game the book will contain. &lt;filters&gt; is optional and allows for constraints based on the tags in the PGN. 
+					</p>
+					<p>
+						For example, the default opening book that comes with tourney was built from the first 14 moves of a PGN containing 2.2 million games. This giant PGN was filtered so that only draws from 2700+ ELO players would be included in the book. The command used to do this was:
+					</p>
+					<div class="terminal">buildbook millionbase-2.22.pgn 14 Result =1/2-1/2 WhiteElo >2700 BlackElo >2700</div> 
+					<p>
+						Be careful to get the spacing right between the filters. There is a space before a =, &gt;, &lt; but not after. 
+					</p>
+					<p class="emphesis">
+						A shout out and big thanks goes to  Ed Schroder for providing millionbase-2.2.pgn on his website. His site can be found <a href="http://www.top-5000.nl/pgn.htm">here</a>.
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+			<article id="e1" class="inlayed_title">
+				<header>
+					<h2>How can I use Tourney to help tune my engine?</h2>
+					<h3>Updated 01/06/2015</h3>
+				</header>
+				<div class="content">
+					<p>
+						 The results of a tournament are stored in <span class="file">&lt;filename&gt;.txt</span>. The formatting of this file is determined by a template. You can modify <span class="file">templates/results.txt</span> to control this the formatting. Once the formatting is the way you need it, it is easy to feed the outputted results file into a tuning algorithm. The next step from there is to write a quick script to loop between running a tournament, running the tuning algorithm and then compiling. 
+					</p>
+					<p>
+						Of course, while the tuning tournament is running you can remotely view its progress. You can also use several computers to speed up the process. 
+					</p>
+					<p>
+						If you don't have several computers, you can enlist your friends and family to help you. On Windows machines, you can schedule a task to run only when the system is idle. That means you can just schedule:
+					</p>
+					<div class="terminal">
+						tourney.exe -connect &lt;YOUR IP HERE&gt;
+					</div>
+					<p>
+						Obviously, a lot of other schedule arrangements can be made. Such as when people are sleeping or are at work. Similar scheduling can be done on Mac and Linux machines but it isn't quite as easy.
+					</p>
+				</div>
+				<div class="footer">
+					<a href="#toc">Back to the top</a>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<div class="divider">
+				<div class="divider_line"></div>
+				<div class="logo">
+					<div class="piece_bg"></div>
+					<img src="logo4b.png" class="logoimg" alt="Tourney"></img>
+				</div>
+			</div>
+			<p><a href="index.html">Home</a> | <a href="features.html">Features</a> | <a href="download.html">Download</a> | <a href="support.html">Support</a></p>
+			<p class="license">All works related to Tourney are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+		</footer>
+	</body>
+</html>

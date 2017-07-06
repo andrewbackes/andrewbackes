@@ -1,0 +1,951 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bl",
+				"block"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"m",
+				"movesToGo	int64 ν"
+			],
+			[
+				"p",
+				"Print	n int, err error ƒ"
+			],
+			[
+				"Pr",
+				"Print	n int, err error ƒ"
+			],
+			[
+				"str",
+				"strings	 package ρ"
+			],
+			[
+				"pr",
+				"Print	n int, err error ƒ"
+			],
+			[
+				"move",
+				"MoveList	[]Move ν"
+			],
+			[
+				"R",
+				"Rounds	int ν"
+			],
+			[
+				"r",
+				"Rounds	int ν"
+			],
+			[
+				"Pla",
+				"PlayOpening	error ƒ"
+			],
+			[
+				"engi",
+				"engineSummary	string ν"
+			],
+			[
+				"s",
+				"strings	 package ρ"
+			],
+			[
+				"matchup",
+				"matchupSummary	string ν"
+			],
+			[
+				"Engine",
+				"EngineResults	[]Record ƒ"
+			],
+			[
+				"c",
+				"castleRights	[2][2]bool ν"
+			],
+			[
+				"Mv",
+				"MoveList	[]Move ν"
+			],
+			[
+				"Mov",
+				"MoveList	[]Move ν"
+			],
+			[
+				"Play",
+				"PlayOpenings	error ƒ"
+			],
+			[
+				"S",
+				"StartingFEN	string ν"
+			],
+			[
+				"Boo",
+				"BookPGN	[]Game ν"
+			],
+			[
+				"boo",
+				"BookMoves	int ν"
+			],
+			[
+				"b",
+				"BookPGN	[]Game ν"
+			],
+			[
+				"Int",
+				"Intn	int ƒ"
+			],
+			[
+				"game",
+				"gamelist	[]Game ν"
+			],
+			[
+				"ma",
+				"MatchString	matched bool, err error ƒ"
+			],
+			[
+				"mov",
+				"MoveList	[]Move ν"
+			],
+			[
+				"For",
+				"FormatInt	string ƒ"
+			],
+			[
+				"re",
+				"Result	Color ν"
+			],
+			[
+				"quit",
+				"quitChan	chan bool ν"
+			],
+			[
+				"State",
+				"StateFlow	chan Status ν"
+			],
+			[
+				"St",
+				"StateFlow	chan Status ν"
+			],
+			[
+				"tim",
+				"timer	[2]int64 ν"
+			],
+			[
+				"for",
+				"FormatInt	string ƒ"
+			],
+			[
+				"mo",
+				"moveList	[]Move ν"
+			],
+			[
+				"print",
+				"Print	n int, err error ƒ"
+			],
+			[
+				"ori",
+				"originOfPiece	 ƒ"
+			],
+			[
+				"FindSt",
+				"FindStringSubmatch	[]string ƒ"
+			],
+			[
+				"sp",
+				"Split	[]string ƒ"
+			],
+			[
+				"Leg",
+				"LegalMoveList	[]Move ν"
+			],
+			[
+				"Legal",
+				"LegalList	[]Move ν"
+			],
+			[
+				"is",
+				"isInCheck	bool ƒ"
+			],
+			[
+				"pawn",
+				"pawn_advances	[2][65]uint64 ν"
+			],
+			[
+				"pri",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"Print",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"moves",
+				"movesToGo	[2]int64 ν"
+			],
+			[
+				"st",
+				"state	Status ν"
+			],
+			[
+				"G",
+				"GameList	[]Game ν"
+			],
+			[
+				"to",
+				"ToUpper	string ƒ"
+			],
+			[
+				"pla",
+				"player	[2]Engine ν"
+			],
+			[
+				"W",
+				"WriteByte	error ƒ"
+			],
+			[
+				"ReadS",
+				"ReadString	line string, err error ƒ"
+			],
+			[
+				"Writ",
+				"WriteString	int, error ƒ"
+			],
+			[
+				"Ga",
+				"GAUNTLET"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "support.html",
+			"settings":
+			{
+				"buffer_size": 24302,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 1679,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "features.html",
+			"settings":
+			{
+				"buffer_size": 3216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "download.html",
+			"settings":
+			{
+				"buffer_size": 3303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "header.css",
+			"settings":
+			{
+				"buffer_size": 1851,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "article.css",
+			"settings":
+			{
+				"buffer_size": 2710,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 6048,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "splashheader.css",
+			"settings":
+			{
+				"buffer_size": 1294,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "footer.css",
+			"settings":
+			{
+				"buffer_size": 785,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "license.txt",
+			"settings":
+			{
+				"buffer_size": 20716,
+				"line_ending": "Unix",
+				"name": "Attribution-NonCommercial-ShareAlike 4.0 Internati"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Andrew/Projects/Tourney/website/sidebyside.css",
+		"/Users/Andrew/Projects/Tourney/website/about.html",
+		"/Users/Andrew/Projects/Tourney/website/test.html",
+		"/Users/Andrew/Projects/Tourney/src/tourney/game.go",
+		"/Users/Andrew/Projects/Tourney/src/tourney/sample.pgn",
+		"/Users/Andrew/Projects/Tourney/src/tourney/Default Tourney.results",
+		"/Users/Andrew/Projects/Tourney/src/bitboard/bitboard.go",
+		"/Users/Andrew/Projects/Tourney/src/tourney/menu.go",
+		"/Users/Andrew/Projects/Tourney/src/tourney/tourney.go",
+		"/Users/Andrew/Projects/Tourney/src/tourney/tourney.sublime-project",
+		"/Users/Andrew/Library/Application Support/Sublime Text 2/Packages/GoSublime/CHANGELOG.md",
+		"/Users/Andrew/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/Andrew/Projects/Tourney/src/tourney/players.go",
+		"/Users/Andrew/Projects/Dirty-Bit/Engine/bitboards.cpp",
+		"/Users/Andrew/Projects/Tourney/.gitignore",
+		"/Users/Andrew/Projects/Tourney/src/bitboard.go",
+		"/Users/Andrew/Projects/Tourney/src/tourney.go",
+		"/Users/Andrew/Projects/Tourney/main.go",
+		"/Users/Andrew/Projects/Tourney/bitboard.go",
+		"/Users/Andrew/Projects/Tourney/bitboard/bitboard.go",
+		"/Users/Andrew/Documents/tohex.cpp",
+		"/Users/Andrew/Projects/Tourney/TourneyProject.md",
+		"/Users/Andrew/Projects/Tourney/Tourney.md",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/bitboards.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/bitboards.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/board.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/board.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/book.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/book.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/debug.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/debug.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/dirtybit.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/engine.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/engine.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/evaluate.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/evaluate.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/hash.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/hash.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/macros.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/main.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/makemove.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/move.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/move.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/movegen.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/movegen.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/nextmove.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/nextmove.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/parameters.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/perft.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/perft.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/precompute.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/precompute.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/search.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/search.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/SEE.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/SEE.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/uci.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/uci.h",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/utilities.cpp",
+		"/Users/Andrew/Desktop/Dirty-Bit/Mac-Engine/Mac-Engine/utilities.h",
+		"/Users/Andrew/Documents/TournyProject.md",
+		"/Users/Andrew/Documents/hw.cpp",
+		"/Users/Andrew/Documents/newfolder/yavathcript/src/compile.coffee",
+		"/Users/Andrew/Documents/hw.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"inlayalt",
+			"jus",
+			"h3",
+			"code",
+			"terminal",
+			"Web broadcast and distribute chess engine tournaments.",
+			"Project: Tourney",
+			"easily",
+			"h3",
+			"</ul>",
+			"<ul>",
+			"ul",
+			"90%",
+			"75%",
+			"25%",
+			"200px",
+			"</div>",
+			"div",
+			"<div class=\"content\">",
+			"block",
+			"7A5229",
+			"margin",
+			"fmt.Print(strings.Repeat(\" \", 6))",
+			"strings.Repeat(\" \", 6),",
+			"GenerateGames",
+			"Generate",
+			"WHITE",
+			"GenerateGames",
+			"GameIndex",
+			"end",
+			"i",
+			"limit",
+			"i",
+			"record",
+			"strings",
+			"GetResults",
+			"SaveResults",
+			"PrintRe",
+			",",
+			"Print",
+			"ShowResults",
+			"\".result\"",
+			"G.",
+			"g",
+			"G",
+			"GenerateMatchups",
+			"board",
+			"i+1",
+			"i",
+			"Set",
+			"m",
+			"}{",
+			":",
+			",",
+			"algebraic",
+			"G[i]",
+			"algebraic",
+			".algebraic",
+			"g.completed",
+			"g.result",
+			"nextGame.player",
+			"g.player",
+			"result",
+			"completed",
+			"round",
+			"date",
+			"site",
+			"player",
+			"moveList",
+			"event",
+			"G.state",
+			"break",
+			"input",
+			"G.timer[WHITE]",
+			"strconv.Itoa(",
+			"eligableSquare",
+			"pieceLetter",
+			"pcn",
+			"pattern",
+			"bitsc",
+			"WHITE",
+			"SHORT",
+			"WHITE",
+			"'",
+			"parsedBoard",
+			"longBoard",
+			"\"",
+			"const bitboard",
+			"ull",
+			"record",
+			"1",
+			"i",
+			":=",
+			"-- ",
+			":=",
+			"parse",
+			"define",
+			"parse",
+			"define",
+			"  "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"inlayed_title",
+			"Broadcast and distribute chess engine tournaments.",
+			"Tourney",
+			"GameIndex",
+			"MatchupResults",
+			"SaveDetails",
+			"PrintResults",
+			"GenerateGames",
+			"Algebraic",
+			".Algebraic",
+			"g.Completed",
+			"g.Result",
+			"nextGame.Player",
+			"g.Player",
+			"Result",
+			"Completed",
+			"Round",
+			"Date",
+			"Site",
+			"Player",
+			"MoveList",
+			"\"",
+			"'",
+			"var",
+			"",
+			"records",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"4",
+			"3",
+			"2"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "support.html",
+					"settings":
+					{
+						"buffer_size": 24302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21802,
+								21802
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7489.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 1679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1206,
+								1206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "features.html",
+					"settings":
+					{
+						"buffer_size": 3216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								372,
+								351
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "download.html",
+					"settings":
+					{
+						"buffer_size": 3303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								623,
+								623
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "header.css",
+					"settings":
+					{
+						"buffer_size": 1851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1847,
+								1847
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1151.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "article.css",
+					"settings":
+					{
+						"buffer_size": 2710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2391,
+								2391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2111.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 6048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								979,
+								979
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 246.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "splashheader.css",
+					"settings":
+					{
+						"buffer_size": 1294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								761,
+								761
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "footer.css",
+					"settings":
+					{
+						"buffer_size": 785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "license.txt",
+					"settings":
+					{
+						"buffer_size": 20716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1133,
+								1133
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Attribution-NonCommercial-ShareAlike 4.0 Internati",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MarGo-output":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 174.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/Andrew/Projects/Tourney/src/tourney/main.go"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

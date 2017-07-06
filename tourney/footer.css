@@ -1,0 +1,54 @@
+/*
+	Footer:
+*/
+
+body footer {
+	text-align: center;
+	color: #996633;
+	padding-bottom: 2%;
+	background: #F3EFEA;
+	display: inline-block;
+	width: 100%;
+}
+body footer a {
+	color: #663300;
+}
+body footer .divider {
+	text-align: center;
+	position: relative;
+}
+body footer div .divider_line {
+	position: absolute;
+	height: 23px;
+	width:100%;
+	right: 0;
+	border-bottom: 2px solid #222222;
+	background: #FFFFFF;
+
+}
+body footer .logo {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: auto;
+}
+body footer div .piece_bg {
+	position: absolute;
+	top: 8px;
+	width:20px;
+	right: 15px;
+	height: 42px;
+	background: #F3EFEA;
+}
+body footer .logoimg {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: auto;
+}
+
+body footer p.license {
+	font-size: 75%;
+}

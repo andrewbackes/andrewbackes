@@ -1,0 +1,72 @@
+html, body {
+	width:100%;
+	height:100%;
+	margin: 0px;
+	font-family: "BentonSans", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+/*
+	Header
+*/
+#splash {
+	text-align: center;
+	color: white;
+	height: 100%;
+	width: 100%;
+	background: -webkit-radial-gradient(#996633 25%, #663300 75%, #331100 90%);
+	background: -o-radial-gradient(#996633 25%, #663300 75%, #331100 90%);
+	background: -moz-radial-gradient(#996633 25%, #663300 75%, #331100 90%);
+	background: radial-gradient(#996633 25%, #663300 65%, #331100 85%);
+}
+header #logo {
+	position:relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform:    translateY(-50%);
+	-ms-transform:     translateY(-50%);
+	-o-transform:      translateY(-50%);
+	transform:         translateY(-50%);
+}
+
+header .logo {
+	width: 200px;
+	height: 200px;
+	display: block;
+	//padding-top: 20%;
+	margin: auto;
+}
+header h1 {
+	color: white;
+}
+header h4 {
+	font-style: italic;
+	font-weight: normal;
+}
+header #scrolldown {
+	color: white;
+	font-size: 75%;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width:100%;
+}
+/*
+	Navigation:
+*/
+nav {
+	background: #222222;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav a {
+	color: white;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-decoration: none;
+}
+
+
+
+	

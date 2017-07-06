@@ -1,0 +1,378 @@
+html, body {
+	margin:0;
+	padding: 0;
+	font-family: Georgia, serif;
+	font-size: 100%;
+	color: #ffffff;
+	background-color: #a3bd44;
+	text-align: left; }
+h1, h2, h3 {
+	color: #333333;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold; }
+h3 {
+	color: #474941;
+	font-size: 110%; }
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 95%;
+}
+#header_container {
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #ffffff; }
+#header {
+	position: relative;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: white;
+	text-align: center;
+	/*background-color: #666666; */
+	margin-left: auto;
+	margin-right: auto;
+	height: 250px;
+	width: 780px; /*trying to fix a problem with safari*/
+	
+	z-index: 1; }
+#header .title {
+	position:absolute;
+	color: #666666;
+	font-size: 400%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 326px;
+	left: 234px;
+	top: 180px;
+}
+#header .logo {
+	background-color: #a3bd44;
+	position:absolute;
+	width: 176px;
+	left: 302px;
+	top: 18px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav_container {
+	width: 100%;
+	height: 45px;
+	background-color: #333333;
+}
+#nav_divider {
+	width:100%;
+	height: 5px;
+	background-color: #333333;
+}
+#nav {
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
+	background-color: #333333;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	z-index: 2; 
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#nav a:link {
+	text-decoration: none;
+	background-color: #333333;
+	color: white;
+}
+#nav a:link.highlight, #nav a:visited.highlight, #nav a:hover.highlight {
+	background-color: #a3bd44;
+	border-top: 0;
+	border-bottom: 0;
+	border-left: 5px solid #a3bd44;
+	border-right: 5px solid #a3bd44;
+	color: #fff;
+}	
+#nav a:visited {
+	text-decoration: none;
+	color:white;}
+#nav a:hover {
+	text-decoration: none;
+	color:#ffffff;
+	background-color: #666666;
+	border-top: 0;
+	border-left: 5px solid #333333;
+	border-right: 5px solid #333333;
+	border-bottom: 0;
+
+	}
+#nav a:active {
+	text-decoration: none;
+	color:white;}	
+
+#nav  a{
+	font-weight: bold;
+	float: left;
+	top: 0px;
+	padding-top: 10px;
+	width: 250px;
+	height: 30px;
+	border-top: 0px;
+	border-bottom: 0;
+	border-left: 5px solid #333333;
+	border-right: 5px solid #333333;
+	text-align: center;
+	display: block;
+	/*padding: 10px 10px; */
+	
+	text-decoration: none;
+}
+
+#content_container {
+	width: 780px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #a3bd44;
+}
+#content_divider {
+	width:100%;
+	height:50px;
+}
+
+#content_bottom_divider {
+	width:100%;
+	height:50px;
+}
+
+#content {
+	width: 75%;
+	/*padding: 5px 15px 15px 15px;*/
+	
+	color: #ffffff;
+}
+#content a:link, a:hover, a:visited {
+	font-size: 96%;
+	font-weight: bold;
+	color: white;
+}
+#top_side_bar {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 85%;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top:18px;
+	width: 25%;
+}
+#top_side_bar .title {
+	font-size: 110%;
+	font-weight:bold;
+}
+
+#top_side_bar .ccrl {
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 90%;
+	border-radius: 8px;
+	background-color:#333333;
+	position: relative;
+}
+#top_side_bar .ccrl_label {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 150%;
+	color: #E62E00;
+	position: absolute;
+	bottom: 8px;
+	left: 10px;
+}
+#top_side_bar .ccrl_elo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 110%;
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+}
+#top_side_bar .ccrl_score {
+	font-weight: bold;
+	font-size: 250%;
+	position: absolute;
+	bottom: 0px;
+	left: 55px;
+}
+#top_side_bar .goal {
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 90%;
+	border-radius: 8px;
+	background-color:#333333;
+	position: relative;
+}
+
+#top_side_bar .goal_label {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 130%;
+	color: #fff;
+	position: absolute;
+	bottom: 9px;
+	left: 10px;
+}
+
+#top_side_bar .goal_score {
+	font-family: Impact, Charcoal, sans-serif;
+	font-weight: bold;
+	font-size: 135%;
+	color: #FFCC00;
+	position: absolute;
+	right: 10px;
+	bottom: 11px;
+}
+#top_side_bar .dl_label {
+	color: #999999;
+	position: absolute;
+	bottom: 6px;
+	right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 110%;
+}
+
+#top_side_bar .dl_score {
+	font-weight: bold;
+	font-size: 210%;
+	position: absolute;
+	left: 10px;
+	bottom: 3px;
+}
+
+
+#bottom_side_bar {
+	font-size: 85%;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom:0;
+	width: 25%;
+}
+.news_item {
+
+	width: 90%;
+	margin-left: 2%;
+}
+.news_header {
+	width: 100%;
+	height: 40px;
+	border-bottom: 2px solid #474941;
+	font-family: Tahoma, Geneva, sans-serif;
+	position: relative;
+}
+.news_date {
+	position: absolute;
+	bottom: 5%;
+	right: -2%;
+	color: white;
+	font-size: 125%;
+	float: left;
+	text-align:right;
+	
+}
+.news_title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 90%;
+	color: #474941;
+	font-size: 175%;
+	font-weight: bold;
+	float:left;
+	
+}
+.news_content {
+	width: 100%;
+	
+}
+div .sub_header {
+	font-family: Tahoma, Geneva, sans-serif;
+	width: 90%;
+	font-weight:bold;
+	font-size: 125%;
+	color: #474941;
+}
+div .note {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 90%;
+	width: 90%;
+	color: #9c6500;
+	background-color: #ffeb9c;
+	border: 1px solid #9c6500;
+	border-radius: 8px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 15px;
+
+}
+ .version_number {
+
+}
+ .version_detail {
+	padding-left: 50px;
+	margin-bottom: 25px;
+}
+
+#footer_container {
+	width: 100%;
+	background-color: #666666;
+}
+#footer_divider {
+	width: 100%;
+	height: 40px;
+	background-color: #333333;
+}
+#footer {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 70%;
+	width: 100%;
+	height: 120px;
+}
+.center {
+	text-align: center; }
+	
+.goals {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+
+}
+.goals tr td {
+	vertical-align: top;
+}
+
+.goals td:nth-child(1) {
+	font-size: 110%;
+	color: #FFCC00;
+	width: 25px;
+	text-shadow: 
+	-1px -1px 0 #555,
+    1px -1px 0 #555,
+    -1px 1px 0 #555,
+    1px 1px 0 #555; 
+}
+
+.goals td:nth-child(2) {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 110%;
+	width: 60px;
+}
+.goals td {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.note tr td {
+	vertical-align: top;
+	padding: 10px;
+}
