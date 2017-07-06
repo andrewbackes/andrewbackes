@@ -96,4 +96,5 @@ In the end the project ended up taking enough weekends to fill a month plus a bu
 | :------------------------------------- |  ---:|
 | Total                                  | $540 |
 
+
 All in all, I think it was worth it. It was a great learning experience and a lot of fun.
