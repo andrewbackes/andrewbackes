@@ -1,9 +1,9 @@
 ---
 title: "Dirty-Bit Chess Engine"
 layout: post
-date: 2017-06-05
+date: 2013-12-09
 tag: chess
-# image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
+image: /assets/images/tourney_logo.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
@@ -13,6 +13,5 @@ author: andrewbackes
 externalLink: false
 ---
 
-# Summary
+I made an engine that can play somewhere around the grandmaster level. I'll write more about it sometime.
 
-More to come...
